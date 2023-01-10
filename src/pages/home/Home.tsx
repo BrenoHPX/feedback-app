@@ -4,8 +4,6 @@ import Header from '../../components/header/Header'
 import axios from 'axios'
 
 const Home: React.FC = () => {
-	let respostas: object[] = []
-
 	useEffect(() => {
 		getArray()
 	}, [])
@@ -25,7 +23,7 @@ const Home: React.FC = () => {
 						qualidade1: valor[2],
 						qualidade2: valor[3],
 						qualidade3: valor[4]
-					} as object
+					}
 				}
 			)
 			respostas = dataBaseGoogle
